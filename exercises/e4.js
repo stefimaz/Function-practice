@@ -8,22 +8,28 @@
  * The function returns an array of first and last names as array items
  * splitFirstAndLastNames('John Smith') => ['John', 'Smith']
  */
-
+/*
 function splitFirstAndLastNames(str) {
   return str.split(' ');
 }
-
+*/
+const splitFirstAndLastNames = (str) => {
+  return str.split(' ');
+}
 
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
  * The function returns the value of the age property of the argument object
  * personAge({ id: 1, name: 'Someone', age: 32}) => 32
  */
-
+/*
 const personAge = function(personObject) {
   return personObject.age;
 }
-
+*/
+const personAge = (personObject) => {
+  return personObject.age;
+}
 
 /** =========================
  * The isNameInArray function takes an array and string of name as the arguments.
@@ -31,8 +37,12 @@ const personAge = function(personObject) {
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'Michael') => true;
  * isNameInArray(['Jon', 'Michael', 'Andrey'], 'James') => false;
  */
-
+/*
 const isNameInArray = function(arr, name) {
+  return arr.includes(name);
+}
+*/
+const isNameInArray = (arr, name) => {
   return arr.includes(name);
 }
 
@@ -44,9 +54,9 @@ const isNameInArray = function(arr, name) {
  * !!! Hint: There are two functions to refactor !!!
  */
 
-const logSecondsUpToMax = function(max) {
+const logSecondsUpToMax = (max) => {
   let i = 0;
-  const timer = setInterval(function() {
+  const timer = setInterval(() => {
     if (i < max) {
       console.log(++i);
     } else {
